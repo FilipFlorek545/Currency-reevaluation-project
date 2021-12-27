@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Przelicznik walut</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="top">
+        <img id="logo" src="css/images/logo.png" alt="LOGO" />
+        <h2>Przelicznik walut</h2>
+      </div>
+      <div id="bottom">
+        <input type="number" id="input_amount" placeholder="kwota" />
+        <input list="Currency" name="Currency" id="input_currency" />
+        <datalist id="Currency">
+          <option id="option_1" value="Frank szwajcarski"></option>
+          <option id="option_2" value="Euro"></option>
+          <option id="option_3" value="Dolar amerykański"></option>
+        </datalist>
+        <button id="btn_revalue">Przelicz</button>
+        <div class="loader">
+          <img
+            id="green_circle"
+            src="css/images/loader.gif"
+            alt="animacja ładowania"
+          />
+        </div>
+        <p>jest równe:</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
